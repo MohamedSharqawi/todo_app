@@ -1,0 +1,44 @@
+@use "./mixins" as *;
+
+:root {
+    --main-background-color: hsl(235, 21%, 11%);
+    --container-background-color: hsl(235, 24%, 19%);
+    --main-color: hsl(234, 39%, 85%);
+    --complete-color: hsl(233, 14%, 35%);
+    --border-color: hsl(237, 14%, 26%);
+    --hover-color: hsl(236, 33%, 92%);
+    --footer-color: hsl(234, 11%, 52%);
+    --background-desktop-image: url(./images/bg-desktop-dark.jpg);
+    --background-mobile-image: url(./images/bg-mobile-dark.jpg);
+    --main-padding: 25px;
+    --main-gap: 18px;
+
+    @include breakpoint-down(500px) {
+        --main-padding: 15px;
+        --main-gap: 12px;
+    }
+}
+
+:root.light {
+    --main-background-color: hsl(0, 0%, 95%);
+    --container-background-color: hsl(0, 0%, 98%);
+    --main-color: hsl(235, 19%, 35%);
+    --complete-color: hsl(233, 11%, 84%);
+    --border-color: hsl(233, 11%, 84%);
+    --footer-color: hsl(236, 9%, 61%);
+    --hover-color: hsl(235, 19%, 35%);
+    --background-desktop-image: url(./images/bg-desktop-light.jpg);
+    --background-mobile-image: url(./images/bg-mobile-light.jpg);
+}
+
+@font-face {
+    font-family: "Josefin";
+    src: url(./font/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
+// Complete online Javascript course
+// Jog around the park 3x
+// 10 minutes meditation
+// Read for 1 hour
+// Pick up groceries
+// Complete Todo App on Frontend Mentor

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo app</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    </head>
+    <body>
+        <main class="main">
+            <div class="main__container">
+                <div class="main__header">
+                    <h1 class="main__title">Todo</h1>
+                    <div class="main__colorSwitch" id="color-switch" tabindex="0">
+                        <img src="./images/icon-sun.svg" alt="Sun Icon" id="sun">
+                        <img src="./images/icon-moon.svg" alt="Moon Icon" id="moon" class="hidden">
+                    </div>
+                </div>
+                <div class="main__inputGrp">
+                    <div class="main__circle"></div>
+                    <input type="text" class="main__input" id="input" placeholder="Create a new todo...">
+                </div>
+                <div class="main__taskContainer">
+                    <ul class="main__list">
+                    </ul>
+                    <div class="main__footer">
+                        <p class="main__footer__left" id="number-of-items"></p>
+                        <div class="main__footer__filter">
+                            <input type="radio" name="filter" value="all" class="hidden" id="all" checked>
+                            <label for="all" tabindex="0">All</label>
+                            <input type="radio" name="filter" value="active" class="hidden" id="active">
+                            <label for="active" tabindex="0">Active</label>
+                            <input type="radio" name="filter" value="completed" class="hidden" id="complete">
+                            <label for="complete" tabindex="0">Completed</label>
+                        </div>
+                        <p class="main__footer__completed" id="clear-completed" tabindex="0">Clear Completed</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="main.js"></script>
+    </body>
+</html>
